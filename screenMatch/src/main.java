@@ -9,7 +9,6 @@ public class main {
         filme.avalia(10);
         filme.avalia(5);
 
-        System.out.println(filme.somaAvaliacoes);
         System.out.println(filme.pegaMedia());
     }
 }
