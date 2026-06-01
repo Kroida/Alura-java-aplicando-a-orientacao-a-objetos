@@ -6,6 +6,10 @@ public class Filme {
     private int totalAvaliacoes;
     int duracaoMinutos;
 
+    int getTotalAvaliacoes() {
+        return totalAvaliacoes;
+    }
+
     void exibeFichaTecnica() {
         System.out.println("Nome do filme: " + nome);
         System.out.println("Ano de lançamento: " + anoLancamento);

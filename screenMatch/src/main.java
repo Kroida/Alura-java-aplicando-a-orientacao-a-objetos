@@ -6,9 +6,8 @@ public class main {
         filme.duracaoMinutos = 120;
 
         filme.exibeFichaTecnica();
-        filme.avalia(10);
-        filme.avalia(5);
-
-        System.out.println(filme.pegaMedia());
+//        filme.avalia(10);
+//        filme.avalia(5);
+//        System.out.println(filme.pegaMedia());
     }
 }
