@@ -5,9 +5,10 @@ public class main {
         filme.anoLancamento = 2003;
         filme.duracaoMinutos = 120;
 
-        filme.exibirFichaTecnica();
+        filme.exibeFichaTecnica();
         filme.avalia(10);
         filme.avalia(5);
+
         System.out.println(filme.somaAvaliacoes);
         System.out.println(filme.pegaMedia());
     }
