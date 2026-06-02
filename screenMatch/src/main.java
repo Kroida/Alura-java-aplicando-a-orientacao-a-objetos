@@ -3,13 +3,17 @@ import br.com.alurascreenmatch.modelos.Filme;
 public class main {
     static void main(String[] args) {
         Filme filme = new Filme();
-        filme.nome = "Homem aranha";
-        filme.anoLancamento = 2003;
-        filme.duracaoMinutos = 120;
+
+        filme.setNome("Homem aranha");
+        filme.setAnoLancamento(2003);
+        filme.setDuracaoMinutos(120);
+        filme.setIncluidoPlano(true);
 
         filme.exibeFichaTecnica();
-//        filme.avalia(10);
-//        filme.avalia(5);
-//        System.out.println(filme.pegaMedia());
+        filme.avalia(9);
+        filme.avalia(8);
+        filme.avalia(9);
+
+        System.out.println("Média de avaliações do filme: " + filme.pegaMedia());
     }
 }
