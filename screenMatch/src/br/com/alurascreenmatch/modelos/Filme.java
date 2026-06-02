@@ -5,19 +5,18 @@ import br.com.alura.screenmatch.calculos.Classificavel;
 public class Filme extends Titulo implements Classificavel {
     private String diretor;
 
-    // Getters and Setters
+    // ----- Getters and Setters -----
     public String getDiretor() {
         return diretor;
     }
 
-    // Methods
     public void setDiretor(String diretor) {
         this.diretor = diretor;
     }
 
-    // Sobreescrita
+    // ----- Sobreescrita -----
     @Override
     public int getClassificacao() {
-        return 0;
+        return (int) pegaMedia() / 2;
     }
 }

@@ -53,8 +53,8 @@ public class Titulo {
         System.out.println("Incluído no plano: " + incluidoPlano);
     }
 
-    public void avalia(double nota) {
-        somaAvaliacoes += nota;
+    public void avalia(double avaliacao) {
+        somaAvaliacoes += avaliacao;
         totalAvaliacoes++;
     }
 

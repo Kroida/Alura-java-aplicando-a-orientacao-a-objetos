@@ -6,7 +6,7 @@ public class Serie extends Titulo {
     private int episodiosTemporada;
     private int minutosEpisodio;
 
-    // Getters and Setters
+    // ----- Getters and Setters -----
     public int getTemporadas() {
         return temporadas;
     }
@@ -39,7 +39,7 @@ public class Serie extends Titulo {
         this.minutosEpisodio = minutosEpisodio;
     }
 
-    // Sobreescrita
+    // ----- Sobreescrita -----
     @Override
     public int getDuracaoMinutos() {
         return temporadas * episodiosTemporada * minutosEpisodio;

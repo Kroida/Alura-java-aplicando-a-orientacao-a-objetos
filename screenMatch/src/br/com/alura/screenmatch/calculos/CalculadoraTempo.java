@@ -5,6 +5,7 @@ import br.com.alurascreenmatch.modelos.Titulo;
 public class CalculadoraTempo {
     private int tempoTotal = 0;
 
+    // ----- Getters and Setters -----
     public int getTempoTotal() {
         return tempoTotal;
     }
