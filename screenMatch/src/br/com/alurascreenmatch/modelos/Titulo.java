@@ -8,23 +8,6 @@ public class Titulo {
     private int totalAvaliacoes;
     private int duracaoMinutos;
 
-    // ----- Methods -----
-    public void exibeFichaTecnica() {
-        System.out.println("Nome do filme: " + nome);
-        System.out.println("Ano de lançamento: " + anoLancamento);
-        System.out.println("Duração em minutos: " + duracaoMinutos);
-        System.out.println("Incluído no plano: " + incluidoPlano);
-    }
-
-    public void avalia(double nota) {
-        somaAvaliacoes += nota;
-        totalAvaliacoes++;
-    }
-
-    public double pegaMedia() {
-        return somaAvaliacoes / totalAvaliacoes;
-    }
-
     // ----- Getters and Setters -----
     public String getNome() {
         return nome;
@@ -60,5 +43,22 @@ public class Titulo {
 
     public void setDuracaoMinutos(int duracaoMinutos) {
         this.duracaoMinutos = duracaoMinutos;
+    }
+
+    // ----- Methods -----
+    public void exibeFichaTecnica() {
+        System.out.println("Nome do título: " + nome);
+        System.out.println("Ano de lançamento: " + anoLancamento);
+        System.out.println("Duração em minutos: " + duracaoMinutos);
+        System.out.println("Incluído no plano: " + incluidoPlano);
+    }
+
+    public void avalia(double nota) {
+        somaAvaliacoes += nota;
+        totalAvaliacoes++;
+    }
+
+    public double pegaMedia() {
+        return somaAvaliacoes / totalAvaliacoes;
     }
 }
