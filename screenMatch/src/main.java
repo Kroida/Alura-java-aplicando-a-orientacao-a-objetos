@@ -1,19 +1,15 @@
 import br.com.alurascreenmatch.modelos.Filme;
+import br.com.alurascreenmatch.modelos.Serie;
 
 public class main {
     static void main(String[] args) {
         Filme filme = new Filme();
-
-        filme.setNome("Homem aranha");
-        filme.setAnoLancamento(2003);
-        filme.setDuracaoMinutos(120);
-        filme.setIncluidoPlano(true);
-
-        filme.exibeFichaTecnica();
-        filme.avalia(9);
-        filme.avalia(8);
-        filme.avalia(9);
-
-        System.out.println("Média de avaliações do filme: " + filme.pegaMedia());
+        Serie lost = new Serie();
+        lost.setNome("Lost");
+        lost.setAnoLancamento(2000);
+        lost.exibeFichaTecnica();
+        lost.setTemporadas(10);
+        lost.setEpisodiosTemporada(10);
+        lost.exibeFichaTecnica();
     }
 }

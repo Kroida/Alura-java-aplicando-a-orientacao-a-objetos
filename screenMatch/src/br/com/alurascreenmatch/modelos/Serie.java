@@ -1,0 +1,41 @@
+package br.com.alurascreenmatch.modelos;
+
+public class Serie extends Titulo {
+    private int temporadas;
+    private boolean ativa;
+    private int episodiosTemporada;
+    private int minutosEpisodio;
+
+    // Getters and Setters
+    public int getTemporadas() {
+        return temporadas;
+    }
+
+    public void setTemporadas(int temporadas) {
+        this.temporadas = temporadas;
+    }
+
+    public boolean isAtiva() {
+        return ativa;
+    }
+
+    public void setAtiva(boolean ativa) {
+        this.ativa = ativa;
+    }
+
+    public int getEpisodiosTemporada() {
+        return episodiosTemporada;
+    }
+
+    public void setEpisodiosTemporada(int episodiosTemporada) {
+        this.episodiosTemporada = episodiosTemporada;
+    }
+
+    public int getMinutosEpisodio() {
+        return minutosEpisodio;
+    }
+
+    public void setMinutosEpisodio(int minutosEpisodio) {
+        this.minutosEpisodio = minutosEpisodio;
+    }
+}
